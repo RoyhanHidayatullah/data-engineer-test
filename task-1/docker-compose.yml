@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine
+    container_name: crm_postgres_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: crm_data
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  etl:
+    build: ./etl
+    container_name: crm_etl_script
+    depends_on:
+      - db
+    volumes:
+      - ./data:/app/data
+      - ./sql:/app/sql
+    environment:
+      DB_HOST: db
+      DB_NAME: crm_data
+      DB_USER: user
+      DB_PASS: password
+
+volumes:
+  postgres_data:
