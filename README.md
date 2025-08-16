@@ -1,6 +1,6 @@
 # Task 1 - Analisis Data CRM dengan PostgreSQL dan Docker
 
-Proyek ini menggunakan Docker untuk menjalankan database PostgreSQL dan skrip ETL Python untuk memuat dan menganalisis data CRM.
+Menggunakan Docker untuk menjalankan database PostgreSQL dan skrip ETL Python untuk memuat dan menganalisis data CRM.
 
 ## Cara Menjalankan
 
@@ -15,7 +15,7 @@ Proyek ini menggunakan Docker untuk menjalankan database PostgreSQL dan skrip ET
 
 # Task 2 - Dashboard Analisis Pinjaman dengan Plotly Dash
 
-Proyek ini menjalankan aplikasi web interaktif untuk visualisasi data LuxuryLoanPortfolio menggunakan Dash dan Docker.
+Menjalankan aplikasi web interaktif untuk visualisasi data LuxuryLoanPortfolio menggunakan Dash dan Docker.
 
 ## Cara Menjalankan
 
